@@ -1,0 +1,2 @@
+[remote "origin"]
+	lfsurl = s3://my-git-bucket/lfs-repo
