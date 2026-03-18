@@ -12,6 +12,8 @@ git commit -m "Configure git lfs"
 uv tool install 'git-remote-s3@https://github.com/SashaOv/git-remote-s3/archive/refs/heads/feature/lfs-only.zip'
 git-lfs-s3 install
 git config --file .lfsconfig remote.origin.lfsurl s3://my-git-bucket/lfs-repo
+git config --add lfs.customtransfer.git-lfs-s3.path git-lfs-s3
+git config --add lfs.standalonetransferagent git-lfs-s3
 ```
 
 ## Localstack
